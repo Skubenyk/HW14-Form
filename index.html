@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <!-- Connet Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- Connect CSS -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- Connect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Контейнер для обох форм -->
+  <div class="container">
+     <!-- Обгортка для форми акаунт -->
+    <div class="wrapper-account">
+      <form action="#" method="post">
+        <!-- Блок акаунт -->
+        <div class="account">
+          <!-- Заголовок в блоці акаунт -->
+          <h2 class="title__account">Create an Account</h2>
+          <!-- Блок з іменем і прізвищем -->
+          <div class="account__name">
+            <!-- Блок ім'я -->
+            <div class="account__first-name">
+              <label for="first-name">First Name</label>
+              <br>
+              <input required type="text" name="first-name" class="first-name" id="first-name">
+            </div>
+            <!-- Блок прізвище -->
+            <div class="account__last-name">
+              <label for="last-name">Last Name</label>
+              <br>
+              <input required type="text" name="last-name" class="last-name" id="last-name">
+            </div>
+          </div>
+          <!-- Блок електронна пошта -->
+          <div class="account__email">
+            <label for="e-mail">E-mail</label>
+            <br>
+            <input required type="email" name="e-mail" class="e-mail" id="e-mail">
+          </div>
+          <!-- Блок текст під блоком електронна пошта -->
+          <div class="text-bottom-email">
+            We'll never share your email with anyone else.
+          </div>
+          <!-- Блок радіо кнопки -->
+          <div class="account__radio" >
+            <input type="radio" name="gender" value="male" id="account-male" class="radio-button-male">
+            <label for="account-male">Male</label>
+            <input type="radio" name="gender" value="female" id="account-female" class="radio-button-female">
+            <label for="account-female">Female</label>
+          </div>
+          <!-- Блок місцезнаходження -->
+          <div class="account__location">
+            <!-- Блок країна -->
+            <div class="account__country">
+              <span class="account__country-title">Country</span>
+              <select name="country"class="country" size="1">
+                <option value="Select"class="country__select-text">Select</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="kanada">Kanada</option>
+                <option value="australia">Australia</option>
+              </select>
+            </div>
+            <!-- Блок місто -->
+            <div class="account__city">
+              <label for="city">City</label>
+              <br>
+              <input required type="text" name="city" class="city" id="city">
+            </div>             
+          </div>
+          <!-- Блок кнопка відправки -->
+          <div class="account__button">
+            <button type="submit" class="account__button-submit"><span>Submit</span></button>
+          </div>
+          <!-- Блок текст під кнопкою відправки -->
+          <div class="text-bottom-button-submit" >
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <br> 
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+          </div>
+          <hr>
+          <!-- Блок текст під лінією -->
+          <div class="text-bottom-line" >
+            Have an account?
+            <a href="#">Log In</a>
+          </div>
+        </div>
+      </form>
+    </div>
+     <!-- Обгортка для форми профіль -->
+    <div class="wrapper-profile">
+      <form action="#" method="post">
+        <!-- Блок профіль -->
+        <div class="profile">
+          <!-- Заголовок в блоці профіль -->
+          <h2 class="title__profile">Profile</h2>
+          <!-- Блок фото -->
+          <div class="profile__image">
+            <div class="foto">
+              <img src="./image/Image.png" alt="foto">
+            </div>
+            <!-- Блок файл -->
+            <div class="profile__file">
+              <div class="file-download">
+                <input type="file" class="add-file"><img class="img-dowload" src="./image/download.png" alt="foto">
+              </div>
+              <div class="file-delete">
+                <button type="reset"><img class="img-delete" src="image/delete.png" alt="foto"></button>
+              </div>
+              <div class="image-text">
+                Up to 1 MB (300x300 px)
+              </div>    
+            </div>
+          </div>
+          <!-- Блок з іменем і поштою в профіль -->
+          <div class="profile__name-mail">
+            <!-- Блок ім'я  в профіль-->
+            <div class="profile__name">
+              <label for="profile-name">Name</label>
+              <br>
+              <input required type="text" name="profile-name" class="profile-name" id="profile-name">
+            </div>
+            <!-- Блок електронна пошта в профіль -->
+            <div class="profile__mail">
+              <label for="profile-mail">E-mail</label>
+              <br>
+              <input required type="email" name="profile-mail" class="profile-mail" id="profile-mail">
+            </div>
+          </div>
+          <!-- Блок місцезнаходження в профіль -->
+          <div class="profile__location">
+            <!-- Блок країна в профіль -->
+            <div class="profile__country">
+              <span class="profile__country-title">Country</span>
+              <select name="profile-country"class="profile-country" size="1">
+                <option value="Select"class="profile__country-select-text">Select</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="kanada">Kanada</option>
+                <option value="australia">Australia</option>
+              </select>
+            </div>
+            <!-- Блок місто в профіль -->
+            <div class="profile__city">
+              <label for="profile-city">City</label>
+              <br>
+              <input required type="text" name="profile-city" class="profile-city" id="profile-city">
+            </div>             
+          </div>
+          <!-- Блок індекс-номер телефона -->
+          <div class="profile__code-number">
+            <!-- Блок індекс-->
+            <div class="profile__zip-code">
+              <label for="zip-code">Zip Code</label>
+              <br>
+              <input type="text" name="zip-code" class="zip-code" id="zip-code">
+            </div>
+            <!-- Блок номер телефона -->
+            <div class="profile__phone-number">
+              <label for="tel">Phone Number</label>
+              <br>
+              <input required type="tel" name="tel" class="tel" id="tel">
+            </div>
+          </div>
+          <!-- Блок кнопка відправки -->
+          <div class="profile__button">
+            <button type="submit" class="profile__button-submit"><span>Submit</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
