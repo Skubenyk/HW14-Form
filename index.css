@@ -1,3 +1,4 @@
+/* Global */
 * {
   margin: 0; 
   padding: 0;
@@ -11,7 +12,30 @@ body {
   font-size:15px;
   color:#545454;
 }
-/* Контейнер з обома формами */
+
+/* Header */
+.header {
+  width: 100%;
+  background: white;
+}
+
+/* Navigation */
+.wrapper__navigation {
+  display: flex;
+  margin-left: 30px;
+}
+
+.navigation__link  {
+  margin-left:30px;
+  margin-top:45px;
+  font-size:16px;
+}
+
+.navigation__link-text {
+  margin-left:20px;
+}
+
+/* Container */
 .container {
   width:1210px;
   height:1240px;
@@ -19,7 +43,8 @@ body {
   display: flex;
   justify-content:space-around;
 }
-/* Загальні параметри для обох форм по класам  */
+
+/* General style for Account & Profile  */
 .account,.profile  {
   width:540px;
   height:620px;
@@ -27,124 +52,151 @@ body {
   border-radius:6px;
   margin-top:50px;
 }
- /* Загальні параметри по тегам для обох форм */
+
 h2 {
   margin-bottom:20px;
   color: black;
 }
+
 button {
   background-color: #FFFFFF;
   border:none;
   border-radius: 6px;
 }
+
 input,.country,.account__button,.profile-country,.profile__button {
   height:40px;
   border-radius: 6px;
   border: 1px solid #E4E4E4;
   padding:10px;
 }
-/* Форма акаунт */
+
+/* Account */
 .account {
   padding:20px;
 }
+
 .account__name {
   display: flex;
   justify-content:space-around;
   margin-bottom:20px;
 }
+
 .first-name,.last-name {
   width:245px;
 }
+
 .account__last-name {
   margin-left:10px;
 }
 .account__email {
   margin-bottom:10px;
 }
+
 .account__email,.account__button {
   width:500px;
 }
+
 .e-mail {
   width:100%;
 }
+
 .first-name,.last-name,.e-mail {
   margin-top:10px;
 }
+
 .text-bottom-email {
   font-size: 13px;
   color:#969696;
   margin-bottom: 20px;
 }
-/* Блок радіо кнопки */
+
+/* Account radio button */
 .account__radio {
   margin-bottom:20px;
 }
+
 .radio-button-male,.radio-button-female {
   margin-right:10px;
 }
+
 .radio-button-female {
   margin-left:10px;
 }
-/* Переключення радіо кнопок */
+
 input:focus {
   outline: none;
   border-color: blue;
 }
+
 .country:focus {
   outline: none;
   border-color: blue;
 }
-/* Блок місцезнаходження */
+
+/* Account location */
 .account__location {
   display: flex;
   justify-content:space-around;
   margin-bottom:20px;
 }
+
 .country,.city {
   width:245px;
   margin-top:10px;
 }
+
 .country {
   color: #545454;
   width:245px;
 }
-/* Кнопка сабміт */
+
+/* Account button submit */
 .account__button {
   margin-bottom:20px;
   color: #545454;
 }
+
 .account__button-submit {
   width:100%;
   height:100%;
   color: #545454;
 }
+
 .text-bottom-button-submit {
   text-align: center;
   margin-bottom:20px;
   font-size:13px;
 }
+
 hr {
   width:500px;
   margin-bottom:20px;
 }
+
 .text-bottom-line {
   text-align: center;
   margin-bottom:30px;
 }
-/* Форма профіль*/
+
+/* Profile*/
 .profile {
   padding:20px;
 }
-/* Блок фото */
+
+/* Profile foto */
 .profile__image {
   display: flex;
   margin-bottom: 20px;
 }
+
+/* Profile file */
 .profile__file {
   display: flex;
   flex-wrap: wrap;
   width:220px;
 }
+
 .file-download {
   display: flex;
   justify-content: end;
@@ -157,15 +209,18 @@ hr {
   border-radius:6px;
   border: 1px solid #E4E4E4;
 }
+
 .add-file {
   opacity: 0;
   position: absolute;
 }
+
 .img-dowload {
   width:15px;
   height:15px;
   margin-top:5px;
 }
+
 .file-delete {
   margin-left:10px;
   width:30px;
@@ -176,9 +231,11 @@ hr {
   border-radius:6px;
   border: 1px solid #E4E4E4;
 }
+
 .img-dowload {
   margin-right:10px;
 }
+
 .image-text {
   margin-top:60px;
   display: block;
@@ -187,66 +244,95 @@ hr {
   font-size: 13px;
   color:#969696;
 }
-/* Блок ім'я і пошта */
+
+/* Profile name & e-mail */
 .profile__name-mail {
   display: flex;
   justify-content:space-around;
   margin-bottom:20px;
 }
+
 .profile__name,.profile__mail {
   width:245px;
 }
+
 .profile-name,.profile-mail {
   margin-top:10px;
   width:245px;
 }
+
 .profile__mail {
   margin-left:10px;
 }
-/* Блок місцезнаходження в профіль */
+
+/* Profile location */
 .profile__location {
   display: flex;
   justify-content:space-around;
   margin-bottom:20px;
 }
+
 .profile-country,.profile-city{
   width:245px;
   margin-top:10px;
 }
+
 .profile-country {
   color: #545454;
   width:245px;
 }
+
 .profile-country:focus {
   outline: none;
   border-color: blue;
 }
-/* Блок індекс-номер тплефона */
+
+/* Profile zip code & phone number */
 .profile__code-number {
   display: flex;
   justify-content:space-around;
   margin-bottom:20px;
 }
+
 .profile__zip-code,.profile__phone-number {
   width:245px;
 }
+
 .zip-code,.tel {
   margin-top:10px;
   width:245px;
 }
+
 .profile__phone-number {
   margin-left:10px;
 }
-/* Кнопка сабміт профіль */
+
+/* Profile button submit */
 .profile__button {
   margin-bottom:20px;
   color: #545454;
   width:150px;
 }
+
 .profile__button-submit {
   width:100%;
   height:100%;
   color: #545454;
+}
+
+/* Footer */
+.wrapper__footer {
+display: flex;
+margin-left: 30px;
+}
+
+.footer__link {
+  margin-left:30px;
+}
+
+.social-media {
+  margin-left:20px;
+  margin-top:40px;
 }
 
 
